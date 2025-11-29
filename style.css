@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'barcode';
+  src: url('fonts/Libre_Barcode_128_Text/LibreBarcode128Text-Regular.ttf')
+}
+
+body {
+  font-family: system-ui;
+  line-height: ;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+    a:hover {
+      color: white;
+      background-color: red;
+      border-radius: .4cap;
+      padding: 3px;
+      transition: .3s;
+      font-weight: 800;
+
+    }
+
+  #nametag {
+      display: grid;
+      place-items: center;
+  }
+
+  h1 {
+    font-family: 'barcode';
+    font-weight: 100;
+    transition: .2s;
+    width: max-content;
+    z-index: 2;
+    scale: 0.9;
+    }
+
+  h1:hover {
+        transform: skew(4deg);
+        color: white;
+        scale: 1;
+  }
+
+  h1::after {
+    z-index: -1;
+    content: "";
+    height: 1em;
+    width: 110%;
+    bottom: -2%;
+    left: -5%;
+    background-color: red;
+    transition: 0.4s;
+    transition-timing-function: ease;
+    transform: translateX(-100vw);
+    border-radius: .2cap;
+  }
+  
+  h1:hover::after {
+    transform: translateX(0vw)
+
+  }
+
+  .highlight {
+    background-color: none;
+    transition: .2s;
+    padding: .3cap;
+    scale: .95;
+  }
+
+    .highlight:hover {
+      background-color: red;
+      color:white;
+      transform: skew(4deg);
+      border-radius: .8cap;
+      scale: 1;
+    }
+
+.bodybag {
+
+
+  padding: 1cap;
+  /* margin: 1cap; */
+  color: orange;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.scriptbag {
+  z-index: -1;
+}
+
+.slider{
+  padding: .3cap;
+  background: white;
+  margin-top: 65vw;
+}
+
+#density{
+  width: 80vw;
+  height: 10px;
+  display: inline-flex;
+}
+
+/* .slider:hover {
+  background: red;
+  color: white;
+  border-color:none;
+  border-radius:.5cap;
+  transform: skew(7.5deg);
+  scale: 1;
+} */
+
+
+
