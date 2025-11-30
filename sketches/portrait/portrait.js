@@ -10,7 +10,7 @@ var textFac = imgDen*1.5;
 
 
 function preload(){
-  me = loadImage("/photos/edited_concertpic1.png");
+  me = loadImage("/photos/Edited_concertpic1.png");
   sourceText = loadStrings("/sketches/portrait/webtext.txt");
 
 }
